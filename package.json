@@ -1,0 +1,19 @@
+{
+  "name": "wktresponse-to-geojson-transform-coords",
+  "version": "1.0.0",
+  "description": "Convert all wkt in json to geojson and transform coordinates.",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "proj4": "2.6.3",
+    "wkt": "0.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
