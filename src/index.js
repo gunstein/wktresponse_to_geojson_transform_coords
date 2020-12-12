@@ -10,7 +10,8 @@ proj4.defs(
 );
 
 function myFunction() {
-  var data_obj = JSON.parse(data);
+  let output = "";
+  let data_obj = JSON.parse(data);
 
   /*
   //Uten transformering
@@ -33,7 +34,9 @@ function myFunction() {
       geojson.coordinates[index] = destp;
     });
     console.log("Transformert geojson : ", geojson);
+    output = output + JSON.stringify(geojson) + "<br>";
   });
+  document.getElementById("dataContainer").innerHTML = output;
 }
 
 document.getElementById("button").addEventListener("click", myFunction);
